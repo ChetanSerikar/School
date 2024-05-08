@@ -1,0 +1,80 @@
+$-ff-serif-outfit: "Outfit", sans-serif;
+$-ff-serif-raleway: "Raleway", sans-serif;
+
+$font-family-base: $-ff-serif-outfit;
+$font-family-accent: $-ff-serif-raleway;
+
+$font-sizes: (
+  "small": (
+    // "900": 3.75rem,
+    // "800": 2.25rem,
+    // "700": 1.75rem,
+    // "600": 1.125rem,
+    // "500": 1.125rem,
+    // "400": 1rem,
+    // "300": 0.925rem,
+    // "200": 0.875rem,
+    "1": 0.25rem,
+    "2": 0.5rem,
+    "3": 0.75rem,
+    "4": 1rem,
+    "5": 1.25rem,
+    "6": 1.5rem,
+    "7": 1.75rem,
+    "8": 2rem,
+    "9": 2.5rem,
+    "10": 3rem,
+    "11": 4rem,
+    "12": 5rem,
+    "13": 6rem,
+    "14": 8rem,
+    "15": 10rem,
+  ),
+  "large": (
+    "1": 0.25rem,
+    "2": 0.5rem,
+    "3": 0.75rem,
+    "4": 1rem,
+    "5": 1.25rem,
+    "6": 1.5rem,
+    "7": 1.75rem,
+    "8": 2rem,
+    "9": 2.5rem,
+    "10": 3rem,
+    "11": 4rem,
+    "12": 5rem,
+    "13": 6rem,
+    "14": 8rem,
+    "15": 10rem,
+    "18": 1.1rem,
+    "20": 1.3rem,
+    "24": 1.5rem,
+    "25": 1.6rem,
+    "28": 1.8rem,
+    "30": 1.87rem,
+    "32": 2rem,
+    "34": 2.125rem,
+    "40": 2.5rem,
+    "50": 3.125rem,
+  ),
+);
+
+$font-size-300: var(--fs-300);
+$font-size-400: var(--fs-400);
+$font-size-500: var(--fs-500);
+$font-size-600: var(--fs-600);
+$font-size-700: var(--fs-700);
+$font-size-800: var(--fs-800);
+$font-size-900: var(--fs-900);
+
+$-fw-400: 400;
+$-fw-500: 500;
+$-fw-600: 600;
+$-fw-700: 700;
+$-fw-800: 800;
+
+$font-weight-default: $-fw-400;
+$font-weight-medium: $-fw-500;
+$font-weight-semi-bold: $-fw-600;
+$font-weight-bold: $-fw-700;
+$font-weight-extra-bold: $-fw-800;
