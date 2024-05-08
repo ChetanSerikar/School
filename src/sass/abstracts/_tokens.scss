@@ -9,20 +9,20 @@ $enable-media-query-dark-mode: false;
 
 // Contextual
 $color-text-default: $color-neutral-700;
-$color-background-default: $color-primary-100;
+$color-background-default: $color-primary-200;
 $color-text-interactive-default: $color-primary-400;
 $color-text-interactive-hover: $color-primary-800;
 
 // set to 0 to disable
 $letter-spacing-loose: 0;
 
-$border-radius-1: $size-2;
-$border-radius-2: $size-3;
+$border-radius-8: $size-2;
+$border-radius-6: 0.375rem;
+$border-radius-10: 0.625rem;
 
 $box-shadow-1: 7px 7px 0px $color-primary-700;
 
-$box-shadow-2: 0px 6px 5px rgb(0, 0, 0, 0.016),
-  0px 22px 18px rgb(0, 0, 0, 0.024), 0px 100px 80px rgb(0, 0, 0, 0.04);
+$box-shadow-2: 7px 7px 0px $color-neutral-900;
 
 $box-shadow-3: 0px 6px 5px rgb(0, 0, 0, 0.02), 0px 22px 18px rgb(0, 0, 0, 0.03),
   0px 100px 80px rgb(0, 0, 0, 0.05);
@@ -103,7 +103,7 @@ $button-font-weight: $font-weight-bold;
 $button-text-transform: uppercase;
 $button-padding: 0.75em 2em;
 $button-border: 0;
-$button-border-radius: $border-radius-1;
+$button-border-radius: $border-radius-8;
 
 $button-accent-color: $color-neutral-100;
 $button-accent-background: $color-accent-400;
@@ -118,7 +118,7 @@ $button-primary-background-hover: $color-primary-800;
 $card-flow-spacing: $size-2;
 $card-padding: $size-8;
 $card-shadow: $box-shadow-1;
-$card-border-radius: $border-radius-2;
+$card-border-radius: $border-radius-10;
 $card-background-default: $color-primary-100;
 $card-color-default: $body-text-color;
 $card-font-family: $body-font-family;
@@ -140,7 +140,7 @@ $form-input-background-color: $color-neutral-100;
 $form-input-border-default: 3px solid $color-primary-200;
 $form-input-border-focus: 3px solid $color-primary-400;
 $form-input-padding: $size-3;
-$form-input-border-radius: $border-radius-1;
+$form-input-border-radius: $border-radius-6;
 
 $form-placeholder-color: $color-primary-300;
 $form-placeholder-font-family: $form-input-font-family;

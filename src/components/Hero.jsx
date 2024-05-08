@@ -20,7 +20,7 @@ const Hero = () => {
             environment, fostering a love for learning that lasts a lifetime.
             Join us as we embark on an exciting educational journey together!
           </div>
-          <div className="hero__descrption__stats ff-base border-2 border-radius-1 box-shadow-1">
+          <div className="hero__descrption__stats ff-base border-2 border-radius-10 box-shadow-1">
             <div className="stat">
               <div className="fs-34 ff-base fw-extra-bold ">+700</div>
               <div className=" fw-medium">Students Passed</div>

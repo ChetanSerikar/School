@@ -1,17 +1,56 @@
 @use "../abstracts/" as *;
 
-.card {
-  display: grid;
-  gap: $card-flow-spacing;
-  padding: $card-padding;
-  background-color: $card-background-default;
-  font-family: $card-font-family;
-  color: $card-color-default;
-  line-height: $card-line-height;
-  box-shadow: $card-shadow;
-  border-radius: $card-border-radius;
+// .card {
+//   display: grid;
+//   gap: $card-flow-spacing;
+//   padding: $card-padding;
+//   background-color: $card-background-default;
+//   font-family: $card-font-family;
+//   color: $card-color-default;
+//   line-height: $card-line-height;
+//   box-shadow: $card-shadow;
+//   border-radius: $card-border-radius;
 
-  &__heading {
-    @include heading($card-heading-font-size, $card-heading-color-default);
+//   &__heading {
+//     @include heading($card-heading-font-size, $card-heading-color-default);
+//   }
+// }
+
+.card-1__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(358px, 1fr));
+  grid-row-gap: 68px;
+  grid-column-gap: 20px;
+}
+.card-1 {
+  position: relative;
+  padding: 60px 40px 40px 40px;
+  display: grid;
+  row-gap: 1rem;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+  background-color: white;
+  &__img {
+    position: absolute;
+    padding: 16px;
+    top: -32px;
+    left: 24px;
+    background-color: var(--primary-400);
+  }
+  &__title {
+    font-size: var(--fs-24);
+  }
+  &__desc {
+    line-height: 150%;
+  }
+}
+@media (max-width: 600px) {
+  .card-1__wrapper {
+    gap: 68px;
+  }
+  .card-1 {
+    &__title {
+      font-size: var(--fs-22);
+    }
   }
 }

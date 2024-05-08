@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="nav_container border-radius-1 ">
+      <div className="nav_container border-radius-8">
         <div className="logo">
           <img src={Logo} alt="" />
         </div>

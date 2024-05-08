@@ -31,6 +31,9 @@
     &-inline-#{$size-name} {
       margin-inline: $size-value;
     }
+    &-bottom-#{$size-name} {
+      margin-bottom: $size-value;
+    }
   }
   .padding {
     &-#{$size-name} {
