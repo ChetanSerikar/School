@@ -477,7 +477,6 @@ a:is(:hover, :focus) {
 .hero__descrption {
   flex: 1;
   margin: auto auto;
-  align-items: center;
 }
 .hero__descrption__welcome {
   font-size: var(--fs-18);
@@ -588,8 +587,7 @@ a:is(:hover, :focus) {
 @media (max-width: 600px) {
   .layout-1__tag {
     font-size: var(--fs-14);
-    width: -moz-max-content;
-    width: max-content;
+    width: auto;
   }
   .layout-1__title {
     font-size: var(--fs-38);

@@ -16,10 +16,9 @@
 
     margin: auto auto;
 
-    align-items: center;
+    // align-items: center;
     &__welcome {
       font-size: var(--fs-18);
-
       text-decoration: underline;
       text-underline-offset: 10px;
     }
