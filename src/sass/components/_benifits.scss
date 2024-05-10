@@ -2,7 +2,7 @@
   width: 100%;
   &__tag {
     padding: 8px 14px;
-    width: fit-content;
+    width: max-content;
     background-color: white;
 
     margin-left: auto;
@@ -24,6 +24,7 @@
   .layout-1 {
     &__tag {
       font-size: var(--fs-14);
+      width: max-content;
     }
     &__title {
       font-size: var(--fs-38);

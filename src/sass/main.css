@@ -567,8 +567,8 @@ a:is(:hover, :focus) {
 }
 .layout-1__tag {
   padding: 8px 14px;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -moz-max-content;
+  width: max-content;
   background-color: white;
   margin-left: auto;
   margin-right: auto;
@@ -588,6 +588,8 @@ a:is(:hover, :focus) {
 @media (max-width: 600px) {
   .layout-1__tag {
     font-size: var(--fs-14);
+    width: -moz-max-content;
+    width: max-content;
   }
   .layout-1__title {
     font-size: var(--fs-38);
