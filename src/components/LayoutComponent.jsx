@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const LayoutComponent = () => {
   return (
@@ -10,9 +11,11 @@ const LayoutComponent = () => {
         <Navbar />
       </header>
       <main>
-        <Outlet /> {/* Nested routes render here */}
+        <Outlet />
       </main>
-      <footer>Footer Content</footer>
+      <footer className=" container_type3">
+        <Footer />
+      </footer>
     </div>
   );
 };

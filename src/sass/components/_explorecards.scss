@@ -1,0 +1,12 @@
+.explorecards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(358px, 1fr));
+  row-gap: var(--fs-40);
+  column-gap: var(--fs-40);
+}
+
+@media (max-width: 800px) {
+  .explorecards {
+    grid-template-columns: repeat(auto-fit, minmax(358px, 1fr));
+  }
+}

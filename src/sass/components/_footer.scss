@@ -1,0 +1,121 @@
+.footer {
+  padding: 100px 113px 40px 113px;
+  margin-bottom: 20px;
+  &__first {
+    display: flex;
+    gap: 80px;
+    &__left {
+      flex-basis: 40%;
+      height: min-content;
+      .desc {
+        // font-size: 20px;
+        line-height: 150%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+      .contacts {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 24px;
+        .contact {
+          padding: 8px;
+        }
+      }
+    }
+    &__right {
+      flex: 3;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      .right__page {
+        margin-bottom: 20px;
+      }
+      .right__sections {
+        margin-bottom: 14px;
+      }
+    }
+  }
+  &__second {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    .policies {
+      flex: 1;
+      display: flex;
+      flex-basis: content;
+
+      .policy {
+        border-right: 2px solid black;
+        padding-right: 10px;
+        margin-right: 10px;
+      }
+      .policy:last-child {
+        padding-right: 0;
+        border-right: none;
+        margin-right: 0;
+      }
+    }
+    .socials {
+      display: flex;
+      .social {
+        padding: 14px;
+        height: fit-content;
+        margin-right: 14px;
+      }
+      .social:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .footer {
+    padding: 60px 30px;
+    // margin-bottom: 20px;
+    &__first {
+      flex-direction: column;
+
+      gap: 40px;
+      &__left {
+        text-align: center;
+        .desc {
+          margin-bottom: 40px;
+        }
+        .left_logo {
+          margin: 0 auto;
+        }
+      }
+    }
+    &__second {
+      justify-content: center;
+      .policies {
+        margin-bottom: 20px;
+
+        .policy {
+          font-size: 14px;
+          padding-right: 6px;
+          width: fit-content;
+        }
+      }
+      .socials {
+        .social {
+          width: fit-content;
+
+          width: fit-content;
+        }
+      }
+    }
+    .copyright {
+      font-size: 14px;
+    }
+  }
+}

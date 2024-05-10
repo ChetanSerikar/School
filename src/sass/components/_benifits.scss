@@ -1,4 +1,4 @@
-.benifits {
+.layout-1 {
   width: 100%;
   &__tag {
     padding: 8px 14px;
@@ -21,14 +21,12 @@
   }
 }
 @media (max-width: 600px) {
-  .benifits {
+  .layout-1 {
     &__tag {
       font-size: var(--fs-14);
     }
     &__title {
       font-size: var(--fs-38);
-    }
-    &__para {
     }
   }
 }

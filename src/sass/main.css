@@ -108,17 +108,18 @@ body {
   font-weight: 400;
   font-size: var(--fs-400);
   color: var(--neutral-700);
-  background-color: var(--primary-200);
+  background-color: var(--primary-100);
   line-height: 1.5;
   scroll-behavior: smooth;
 }
 
 a {
-  color: var(--primary-400);
+  color: var(--neutral-900);
+  text-decoration: none;
 }
 
 a:is(:hover, :focus) {
-  color: var(--primary-800);
+  color: var(--neutral-800);
 }
 
 .button {
@@ -183,12 +184,59 @@ a:is(:hover, :focus) {
   line-height: 150%;
 }
 
+.card-2 {
+  padding: var(--fs-40);
+  text-align: center;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  row-gap: 24px;
+}
+.card-2 .profile_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-2 .stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-3 {
+  padding: 60px;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  row-gap: 40px;
+}
+.card-3__title {
+  font-size: var(--fs-34);
+  border-bottom: 2px dashed black;
+  padding-bottom: var(--fs-24);
+}
+.card-3__button {
+  font-size: var(--fs-18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 18px;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .card-1__wrapper {
     gap: 68px;
   }
   .card-1__title {
     font-size: var(--fs-22);
+  }
+  .card-1__button {
+    font-size: var(--fs-4);
+  }
+  .card-3__title {
+    font-size: var(--fs-28);
   }
 }
 .heading-1 {
@@ -514,10 +562,10 @@ a:is(:hover, :focus) {
     font-size: var(--fs-34);
   }
 }
-.benifits {
+.layout-1 {
   width: 100%;
 }
-.benifits__tag {
+.layout-1__tag {
   padding: 8px 14px;
   width: -moz-fit-content;
   width: fit-content;
@@ -525,12 +573,12 @@ a:is(:hover, :focus) {
   margin-left: auto;
   margin-right: auto;
 }
-.benifits__title {
+.layout-1__title {
   font-size: var(--fs-48);
   margin-top: 14px;
   margin-bottom: 14px;
 }
-.benifits__para {
+.layout-1__para {
   max-width: 870px;
   margin-inline: auto;
   margin-bottom: 80px;
@@ -538,11 +586,194 @@ a:is(:hover, :focus) {
 }
 
 @media (max-width: 600px) {
-  .benifits__tag {
+  .layout-1__tag {
     font-size: var(--fs-14);
   }
-  .benifits__title {
+  .layout-1__title {
     font-size: var(--fs-38);
+  }
+}
+.caresoul {
+  max-width: 1050px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.caresoul__grid_wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  transition: 0.2s all ease-in;
+  margin-bottom: var(--fs-40);
+}
+.caresoul__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--fs-20);
+}
+.caresoul__buttons__left, .caresoul__buttons__rigth {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.accordian {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(358px, 1fr));
+  gap: 40px;
+}
+.accordian .accord {
+  padding: 26px 30px;
+  flex-basis: calc(50% - 50px);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.accordian .accord__head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.accordian .accord__head .plusminus {
+  padding: 9.3px;
+}
+.accordian .accord .underline {
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .accordian {
+    grid-template-columns: repeat(1, minmax(358px, 1fr));
+  }
+}
+.explorecards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(358px, 1fr));
+  row-gap: var(--fs-40);
+  -moz-column-gap: var(--fs-40);
+       column-gap: var(--fs-40);
+}
+
+@media (max-width: 800px) {
+  .explorecards {
+    grid-template-columns: repeat(auto-fit, minmax(358px, 1fr));
+  }
+}
+.footer {
+  padding: 100px 113px 40px 113px;
+  margin-bottom: 20px;
+}
+.footer__first {
+  display: flex;
+  gap: 80px;
+}
+.footer__first__left {
+  flex-basis: 40%;
+  height: -moz-min-content;
+  height: min-content;
+}
+.footer__first__left .desc {
+  line-height: 150%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.footer__first__left .contacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.footer__first__left .contacts .contact {
+  padding: 8px;
+}
+.footer__first__right {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.footer__first__right .right__page {
+  margin-bottom: 20px;
+}
+.footer__first__right .right__sections {
+  margin-bottom: 14px;
+}
+.footer__second {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.footer__second .policies {
+  flex: 1;
+  display: flex;
+  flex-basis: content;
+}
+.footer__second .policies .policy {
+  border-right: 2px solid black;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.footer__second .policies .policy:last-child {
+  padding-right: 0;
+  border-right: none;
+  margin-right: 0;
+}
+.footer__second .socials {
+  display: flex;
+}
+.footer__second .socials .social {
+  padding: 14px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 14px;
+}
+.footer__second .socials .social:last-child {
+  margin-right: 0px;
+}
+
+@media (max-width: 950px) {
+  .footer {
+    padding: 60px 30px;
+  }
+  .footer__first {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer__first__left {
+    text-align: center;
+  }
+  .footer__first__left .desc {
+    margin-bottom: 40px;
+  }
+  .footer__first__left .left_logo {
+    margin: 0 auto;
+  }
+  .footer__second {
+    justify-content: center;
+  }
+  .footer__second .policies {
+    margin-bottom: 20px;
+  }
+  .footer__second .policies .policy {
+    font-size: 14px;
+    padding-right: 6px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footer__second .socials .social {
+    width: -moz-fit-content;
+    width: fit-content;
+    width: fit-content;
+  }
+  .footer .copyright {
+    font-size: 14px;
   }
 }
 .even-columns {
@@ -1674,8 +1905,16 @@ a:is(:hover, :focus) {
   margin: 0 auto;
 }
 
-@media (max-width: 500px) {
+.container_type3 {
+  max-width: 1399px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
   .container_type2 {
+    margin: 0 1rem;
+  }
+  .container_type3 {
     margin: 0 1rem;
   }
 }
@@ -1763,6 +2002,14 @@ a:is(:hover, :focus) {
 
 .border-radius-6 {
   border-radius: 0.375rem;
+}
+
+.border-radius-4 {
+  border-radius: 0.25rem;
+}
+
+.border-radius-12 {
+  border-radius: 0.75rem;
 }
 
 .border-2 {

@@ -1,0 +1,22 @@
+.caresoul {
+  max-width: 1050px;
+  overflow: hidden;
+  margin: 0 auto;
+  &__grid_wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    transition: 0.2s all ease-in;
+    margin-bottom: var(--fs-40);
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--fs-20);
+    &__left,
+    &__rigth {
+      padding: 12px;
+      cursor: pointer;
+    }
+  }
+}
