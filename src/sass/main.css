@@ -299,6 +299,9 @@ a:is(:hover, :focus) {
   }
 }
 @media (max-width: 850px) {
+  .historycard {
+    padding: 50px;
+  }
   .historycard .history {
     flex-direction: column;
     gap: 30px;
