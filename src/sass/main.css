@@ -880,6 +880,11 @@ a:is(:hover, :focus) {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 600px) {
+  .member__profile {
+    font-size: 20px;
+  }
+}
 .even-columns {
   display: grid;
   gap: var(--grid-gap, 1.5rem);
