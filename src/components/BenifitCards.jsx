@@ -1,15 +1,15 @@
 import React from "react";
-import Card from "./Card";
+import CardOne from "./CardOne";
 import { card1 } from "../data/cards";
 import IMG from "../assets/benfits2.svg";
 
-const Cards = () => {
+const BenifitCards = () => {
   console.log(card1);
   return (
     <>
       <div className="card-1__wrapper margin-bottom-150">
         {card1.map((card, index) => (
-          <Card
+          <CardOne
             key={index}
             title={card.title}
             descrption={card.descrption}
@@ -21,4 +21,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default BenifitCards;

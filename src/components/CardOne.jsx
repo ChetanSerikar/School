@@ -1,7 +1,7 @@
 import React from "react";
 import IMG from "../assets/benfits2.svg";
 
-const Card = ({ title, descrption, img }) => {
+const CardOne = ({ title, descrption, img }) => {
   return (
     <div className="card-1 ff-base border-2 border-radius-10 box-shadow-2">
       <div className="card-1__img border-radius-8 border-2 ">
@@ -13,4 +13,4 @@ const Card = ({ title, descrption, img }) => {
   );
 };
 
-export default Card;
+export default CardOne;

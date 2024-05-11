@@ -1,4 +1,4 @@
-import Cards from "./Cards";
+import BenifitCards from "./BenifitCards";
 import LayoutOne from "./LayoutOne";
 
 const Benifits = () => {
@@ -10,7 +10,7 @@ const Benifits = () => {
   return (
     <>
       <LayoutOne Head={Head} />
-      <Cards />
+      <BenifitCards />
     </>
   );
 };

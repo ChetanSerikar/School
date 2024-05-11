@@ -84,17 +84,19 @@
   //   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .nav_container {
     margin: 0 1rem;
   }
   .menu-icon {
     display: block;
     cursor: pointer;
+    margin-right: 1rem;
   }
 
   .nav-elements {
     position: fixed;
+    z-index: 99px;
     right: -10px;
     top: 60px;
     background-color: var(--primary-300);

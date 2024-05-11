@@ -1,0 +1,47 @@
+.layout-2 {
+  z-index: 1px;
+  padding: 100px 80px;
+  position: relative;
+  display: flex;
+  gap: 50px;
+  &__cubes {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__left {
+    flex: 1;
+    &__tag {
+      padding: 0.5rem 1rem;
+      width: fit-content;
+      margin-bottom: 10px;
+    }
+    &__title {
+      font-size: var(--fs-38);
+      line-height: 130%;
+    }
+  }
+  &__right {
+    flex: 1;
+    line-height: 150%;
+  }
+}
+
+@media (max-width: 600px) {
+  .layout-2 {
+    flex-direction: column;
+    gap: 20px;
+    &__left {
+      text-align: center;
+      &__tag {
+        margin: 0 auto 10px auto;
+      }
+      &__title {
+        font-size: 28px;
+      }
+    }
+    &__right {
+      text-align: center;
+    }
+  }
+}

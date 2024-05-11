@@ -88,6 +88,53 @@
   }
 }
 
+.card-4 {
+  flex-basis: 47%;
+  // flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--fs-38);
+  }
+  &__body {
+    line-height: 150%;
+  }
+}
+
+.historycard {
+  padding: 100px;
+  .history {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 80px;
+    &__year {
+      display: flex;
+      gap: 10px;
+      padding: 25px 34px;
+      justify-content: center;
+      align-items: center;
+      font-size: var(--fs-48);
+    }
+    &__desc {
+      flex: 1;
+      &__title {
+        font-size: var(--fs-24);
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .history:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 600px) {
   .card-1__wrapper {
     gap: 68px;
@@ -103,6 +150,35 @@
   .card-3 {
     &__title {
       font-size: var(--fs-28);
+    }
+  }
+  .card-4 {
+    gap: 40px;
+    &__head {
+      font-size: var(--fs-30);
+    }
+  }
+  .historycard {
+    .history {
+      &__year {
+        font-size: var(--fs-38);
+      }
+      &__desc {
+        &__title {
+          font-size: var(--fs-22);
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  .historycard {
+    .history {
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 12px;
+      align-items: flex-start;
     }
   }
 }

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import Logo from "../assets/logo.svg";
 import Hamburger from "../assets/Hamburger.svg";
+import XMark from "../assets/x-mark.svg";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -10,6 +11,32 @@ const Navbar = () => {
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
+  const navItems = [
+    {
+      title: "Home",
+      link: "/",
+    },
+    {
+      title: "About",
+      link: "/about",
+    },
+    {
+      title: "academics",
+      link: "/academics",
+    },
+    {
+      title: "Admissions",
+      link: "/admissions",
+    },
+    {
+      title: "Student",
+      link: "/studentlife",
+    },
+    {
+      title: "Contact",
+      link: "/contact",
+    },
+  ];
 
   return (
     <nav className="navbar">
@@ -18,30 +45,22 @@ const Navbar = () => {
           <img src={Logo} alt="" />
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
-          <img src={Hamburger} alt="" />
+          <img src={showNavbar ? XMark : Hamburger} alt="" width={35} />
         </div>
         <div
           className={`nav-elements border-radius-1  ${showNavbar && "active"} `}
         >
           <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/academics">Academics</Link>
-            </li>
-            <li>
-              <Link to="/admissions">Admissions</Link>
-            </li>
-            <li>
-              <Link to="/studentlife">student</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
+            {navItems.map((item, index) => (
+              <li key={index}>
+                <Link
+                  onClick={() => setShowNavbar((prev) => !prev)}
+                  to={item.link}
+                >
+                  {item.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

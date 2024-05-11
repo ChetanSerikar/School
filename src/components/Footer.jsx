@@ -50,7 +50,7 @@ const Footer = () => {
             problem-solving skills, and imagination.
           </div>
           {contacts.map((item, index) => (
-            <div className="contacts fw-medium  ff-base" key={index}>
+            <div className="contacts fw-medium ff-base" key={index}>
               <span>
                 <img
                   className="contact border-2 border-radius-6 bg-primary-100"
@@ -67,7 +67,7 @@ const Footer = () => {
             <div key={i}>
               <div className=" fw-semi-bold right__page">{item.title}</div>
               {item.sections.map((soc, index) => (
-                <div className="right__sections" key={index}>
+                <div className="right__sections fw-medium" key={index}>
                   {soc}
                 </div>
               ))}
@@ -77,7 +77,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__second">
-        <div className="policies">
+        <div className="policies fw-medium">
           <div className="policy">Privacy Policy</div>
           <div className="policy">Cookie Policy</div>
           <div className="policy">Terms of Service</div>

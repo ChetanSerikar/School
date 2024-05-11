@@ -1,0 +1,13 @@
+.missionandvission,
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+@media (max-width: 800px) {
+  .missionandvission,
+  .members {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
