@@ -56,7 +56,7 @@ const Accordian = () => {
           }`}
         >
           <div
-            className={`accord__head ff-base fw-medium ${
+            className={`accord__head fw-semi-bold  clr-neutral-700 ${
               currentOpen == index ? "underline" : ""
             }`}
             onClick={() => handleClick(index)}
@@ -67,7 +67,9 @@ const Accordian = () => {
             </span>
           </div>
           {currentOpen === index && (
-            <div className="accord_body ff-base">{item.body}</div>
+            <div className="accord_body ff-base clr-neutral-600 fw-medium fw">
+              {item.body}
+            </div>
           )}
         </div>
       ))}

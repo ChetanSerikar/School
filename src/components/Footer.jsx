@@ -45,15 +45,18 @@ const Footer = () => {
       <div className="footer__first">
         <div className="footer__first__left">
           <img className="left_logo" src={FooterLogo} alt="" />
-          <div className="desc">
+          <div className="desc clr-neutral-500">
             We believe in the power of play to foster creativity,
             problem-solving skills, and imagination.
           </div>
           {contacts.map((item, index) => (
-            <div className="contacts fw-medium ff-base" key={index}>
+            <div
+              className="contacts fw-medium ff-base clr-neutral-700"
+              key={index}
+            >
               <span>
                 <img
-                  className="contact border-2 border-radius-6 bg-primary-100"
+                  className="contact border-2 border-radius-6 bg-primary-100 "
                   src={item.img}
                   alt=""
                 />
@@ -65,9 +68,14 @@ const Footer = () => {
         <div className="footer__first__right">
           {pages.map((item, i) => (
             <div key={i}>
-              <div className=" fw-semi-bold right__page">{item.title}</div>
+              <div className=" fw-semi-bold right__page clr-neutral-700">
+                {item.title}
+              </div>
               {item.sections.map((soc, index) => (
-                <div className="right__sections fw-medium" key={index}>
+                <div
+                  className="right__sections fw-medium clr-neutral-600"
+                  key={index}
+                >
                   {soc}
                 </div>
               ))}
@@ -77,7 +85,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__second">
-        <div className="policies fw-medium">
+        <div className="policies fw-medium clr-neutral-600">
           <div className="policy">Privacy Policy</div>
           <div className="policy">Cookie Policy</div>
           <div className="policy">Terms of Service</div>
@@ -100,7 +108,7 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className=" copyright text-center fw-medium ff-base">
+      <div className=" copyright text-center fw-medium ff-base clr-neutral-400">
         Copyright © [2024] Little Learners Academy. All rights reserved.
       </div>
     </div>

@@ -4,7 +4,6 @@ import { card1 } from "../data/cards";
 import IMG from "../assets/benfits2.svg";
 
 const BenifitCards = () => {
-  console.log(card1);
   return (
     <>
       <div className="card-1__wrapper margin-bottom-150">

@@ -50,7 +50,6 @@
   text-align: center;
   display: grid;
   grid-template-rows: subgrid;
-
   grid-row: span 3;
   row-gap: 24px;
 
@@ -156,6 +155,16 @@
     border-right: 2px solid black;
     border-bottom: 2px solid black;
   }
+  .col2 {
+    position: absolute;
+    z-index: 3;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 5.9375rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -210,6 +219,66 @@
   margin-bottom: 0;
 }
 
+.card-7 {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 0;
+  &__sl {
+    font-size: 3.75rem;
+    padding: 0.625rem 1.5rem;
+    width: fit-content;
+  }
+  &__line {
+    width: 0.75rem;
+    height: 100%;
+
+    background-color: var(--primary-500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+
+    .line {
+      width: 3px;
+      height: 100%;
+      background-color: black;
+      background-position: center;
+    }
+  }
+  // &__bottomline {
+  //   width: 0.75rem;
+  //   height: 4.375rem;
+
+  //   background-color: var(--primary-500);
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   display: none;
+
+  //   .line {
+  //     width: 3px;
+  //     height: 100%;
+  //     background-color: black;
+  //     background-position: center;
+  //   }
+  // }
+  &__body {
+    padding: 3.125rem;
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: column;
+
+    gap: 1.25rem;
+    &__title {
+      font-size: 1.875rem;
+    }
+    &__desc {
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 600px) {
   .card-1__wrapper {
     gap: 68px;
@@ -280,6 +349,25 @@
   .card-6:last-child {
     margin-bottom: 0;
   }
+  .card-7 {
+    grid-row: span 3;
+    justify-content: center;
+    margin-bottom: 3.3125rem;
+    // &__bottomline {
+    //   display: flex;
+    // }
+    &__line {
+      margin-left: 0;
+      height: 3.75rem;
+      margin-left: 12%;
+    }
+  }
+  .card-7:last-child {
+    margin-bottom: 0;
+    // &__bottomline {
+    //   display: none;
+    // }
+  }
 }
 
 @media (max-width: 850px) {
@@ -309,9 +397,6 @@
         display: block;
       }
     }
-    // &__desc {
-    //   font-size: var(--fs-4);
-    // }
   }
 }
 

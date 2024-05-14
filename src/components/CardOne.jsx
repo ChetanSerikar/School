@@ -7,8 +7,12 @@ const CardOne = ({ title, descrption, img }) => {
       <div className="card-1__img border-radius-8 border-2 ">
         <img src={img} alt="" />
       </div>
-      <div className="card-1__title ff-accent fw-bold">{title}</div>
-      <div className="card-1__desc ff-base fw-medium">{descrption}</div>
+      <div className="card-1__title ff-accent fw-bold clr-neutral-800">
+        {title}
+      </div>
+      <div className="card-1__desc ff-base fw-medium clr-neutral-500">
+        {descrption}
+      </div>
     </div>
   );
 };

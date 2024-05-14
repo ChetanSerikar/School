@@ -67,10 +67,10 @@ const Gallery = () => {
       <LayoutOne Head={Head} />
       {/* Rooms */}
       <div className="rooms">
-        <div className="rooms__filters">
+        <div className="rooms__filters ">
           {rooms.map((room, index) => (
             <div
-              className={` rooms__filters__filter border-2 border-radius-6 ${
+              className={` rooms__filters__filter border-2 border-radius-6 clr-neutral-800 fw-semi-bold ${
                 currentRoom == room
                   ? "rooms__filters__active"
                   : "rooms__filters__inactive"

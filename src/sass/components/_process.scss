@@ -1,0 +1,12 @@
+.process {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22.375rem, 1fr));
+  row-gap: 5rem;
+  column-gap: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .process {
+    row-gap: 0px;
+  }
+}

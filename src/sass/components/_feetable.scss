@@ -1,0 +1,18 @@
+.feetable__wrapper {
+  padding: 3.125rem;
+  //   .dummy {
+  //     border-radius: 10px;
+  //     overflow: hidden;
+  //   }
+}
+.feetable {
+  border-collapse: collapse;
+  th,
+  td {
+    border: 2px solid var(--neutral-700);
+    padding: 1.125rem 1.875rem;
+  }
+}
+table {
+  border-radius: 0.625rem;
+}

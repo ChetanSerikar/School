@@ -90,11 +90,12 @@ const Caresoul = ({ numberOfCards = 3 }) => {
     }
     setCurrentCard((prev) => prev + 1);
   };
+  const con = true;
   return (
     <div className="caresoul margin-bottom-150">
       <div
         className="caresoul__grid_wrapper"
-        style={{ gridAutoColumns: `${slideWidth}px`, gridGap: `${gapSize}px` }}
+        // style={{ gridAutoColumns: `${slideWidth}px`, gridGap: `${gapSize}px` }}
       >
         {testimonials.map((testimonial, index) =>
           index < currentCard && index >= currentCard - numberOfCards ? (

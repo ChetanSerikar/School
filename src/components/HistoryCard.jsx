@@ -25,7 +25,7 @@ const HistoryCard = () => {
     },
   ];
   return (
-    <div className="historycard border-2 border-radius-10 box-shadow-2">
+    <div className="historycard border-2 border-radius-10 box-shadow-2 bg-neutral-000">
       {history.map((item, i) => (
         <YearHistory key={i} info={item} />
       ))}

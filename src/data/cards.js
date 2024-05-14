@@ -18,6 +18,23 @@ import Subject3 from "../assets/Science.svg";
 import Subject4 from "../assets/Social.svg";
 import Subject5 from "../assets/ArtsAndCarft.svg";
 import Subject6 from "../assets/PE.svg";
+
+import Extra1 from "../assets/Extra1.svg";
+import Extra2 from "../assets/Extra2.svg";
+import Extra3 from "../assets/Extra3.svg";
+import Extra4 from "../assets/Extra4.svg";
+import Extra5 from "../assets/Extra5.svg";
+import Extra6 from "../assets/Extra6.svg";
+
+import event1 from "../assets/event1.svg";
+import event2 from "../assets/event2.svg";
+import event3 from "../assets/event3.svg";
+import event4 from "../assets/event4.svg";
+import event5 from "../assets/event5.svg";
+import event6 from "../assets/event6.svg";
+
+import Counseling from "../assets/console.svg";
+
 export let card1 = [
   {
     img: benfits1,
@@ -109,8 +126,7 @@ export const subjects = [
   {
     img: Subject3,
     title: "Science",
-    content:
-      "Exploring the natural world through hands-on experiments and investigations.",
+    content: "Exploring the natural world through hands-on experiments.",
   },
   {
     img: Subject4,
@@ -127,5 +143,104 @@ export const subjects = [
     img: Subject6,
     title: "Physical Education",
     content: "Promoting physical fitness, coordination, and teamwork.",
+  },
+];
+
+export const ExtraInfo = [
+  {
+    img: Extra1,
+    title: "Sports and Athletics",
+    descrption:
+      "Students can participate in various sports, from soccer and basketball to gymnastics and yoga. Sports help promote teamwork, physical fitness, and a sense of discipline.",
+  },
+  {
+    img: Extra2,
+    title: "Art and Creativity",
+    descrption:
+      "Our art classes and creative workshops provide a platform for students to express their creativity through painting, drawing, and other artistic forms.",
+  },
+  {
+    img: Extra3,
+    title: "Music and Performing Arts",
+    descrption:
+      "Students can discover their musical talents through singing, playing musical instruments, and participating in drama and theater performances.",
+  },
+  {
+    img: Extra4,
+    title: "Language Clubs",
+    descrption:
+      "Language clubs offer an opportunity for students to immerse themselves in different languages and cultures, fostering global awareness.",
+  },
+  {
+    img: Extra5,
+    title: "Science Club",
+    descrption:
+      "Language clubs offer an opportunity for students to immerse themselves in different languages and cultures, fostering global awareness.",
+  },
+  {
+    img: Extra6,
+    title: "Cooking and Culinary Arts",
+    descrption:
+      "Cooking classes introduce students to the joys of preparing and tasting delicious and healthy meals.",
+  },
+];
+
+export const Events = [
+  {
+    img: event1,
+    title: "Annual Sports Day",
+    content:
+      "A day filled with friendly competition, team spirit, and sportsmanship.",
+  },
+  {
+    img: event2,
+    title: "Cultural Festivals",
+    content:
+      "Celebrations of diverse cultural festivals, promoting cultural exchange and appreciation.",
+  },
+  {
+    img: event3,
+    title: "Art Exhibitions",
+    content:
+      "Showcasing our students' artistic talents through exhibitions and displays.",
+  },
+  {
+    img: event4,
+    title: "Science Fair",
+    content:
+      "A platform for budding scientists to present their innovative projects and experiments.",
+  },
+  {
+    img: event5,
+    title: "International Day",
+    content:
+      "A vibrant celebration of our diverse community, embracing cultures from around the world.",
+  },
+  {
+    img: event6,
+    title: "Graduation Ceremony",
+    content:
+      "A significant milestone as our Kindergarten students prepare to embark on their academic journey.",
+  },
+];
+
+export const supports = [
+  {
+    img: Counseling,
+    title: "Counseling",
+    descrption:
+      "Professional counselors offer guidance and support to students, addressing their emotional and social well-being.",
+  },
+  {
+    img: Feature1,
+    title: "Learning Support",
+    descrption:
+      "Our educators provide additional assistance to students who may require extra support in their academic journey.",
+  },
+  {
+    img: benfits6,
+    title: "Parent-Teacher Collaboration",
+    descrption:
+      "We foster a strong partnership with parents to ensure seamless communication and mutual support in a child's development.",
   },
 ];

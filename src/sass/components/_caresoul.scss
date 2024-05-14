@@ -1,12 +1,23 @@
 .caresoul {
   max-width: 1050px;
-  overflow: hidden;
+
   margin: 0 auto;
   &__grid_wrapper {
+    overflow: scroll;
     display: grid;
     grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 16px);
+
     transition: 0.2s all ease-in;
     margin-bottom: var(--fs-40);
+    // grid-template-columns: repeat(3, calc((100% / 3) - 16px));
+    column-gap: 1rem;
+    transition: all 0.2s ease-in-out;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+  }
+  &__grid_wrapper::-webkit-scrollbar {
+    display: none;
   }
   &__buttons {
     display: flex;
@@ -17,6 +28,21 @@
     &__rigth {
       padding: 12px;
       cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .caresoul {
+    &__grid_wrapper {
+      grid-auto-columns: calc((100% / 2) - 16px);
+    }
+  }
+}
+@media (max-width: 600px) {
+  .caresoul {
+    &__grid_wrapper {
+      grid-auto-columns: calc((100%) - 16px);
     }
   }
 }

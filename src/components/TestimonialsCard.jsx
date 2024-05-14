@@ -6,7 +6,7 @@ const TestimonialsCard = ({ testimonial }) => {
   const { userImg, userName, stars, comment } = testimonial;
 
   return (
-    <div className="card-2 border-2 border-radius-10 flex bg-neutral-000 box-shadow-2">
+    <div className="card-2 border-2 border-radius-10 flex bg-neutral-000 box-shadow-2 clr-neutral-600">
       <div className="profile_wrapper">
         <img src={Profile1} alt="" />
         <div className=" ff-base fw-semi-bold fs-20">{userName}</div>

@@ -33,8 +33,8 @@ const CardSix = ({ info }) => {
           />
         ))}
       </div>
-      <div className="card-6__title ff-accent fw-bold">
-        <div>{title}</div>
+      <div className="card-6__title ">
+        <div className="ff-accent fw-bold clr-neutral-800">{title}</div>
         <div className="card__buttons">
           <button
             onClick={() => handleLeft()}
@@ -50,7 +50,7 @@ const CardSix = ({ info }) => {
           </button>
         </div>
       </div>
-      <div className="card-6__desc clr-neutral-500">{desc}</div>
+      <div className="card-6__desc clr-neutral-500 fw-medium">{desc}</div>
     </div>
   );
 };
