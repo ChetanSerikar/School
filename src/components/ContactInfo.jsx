@@ -1,4 +1,3 @@
-import React from "react";
 import Email from "../assets/Email.svg";
 import Phone from "../assets/Phone.svg";
 import Loaction from "../assets/Location.svg";

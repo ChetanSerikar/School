@@ -5,7 +5,7 @@ import Left from "../assets/left.svg";
 import Right from "../assets/right.svg";
 
 const Caresoul = ({ numberOfCards = 3 }) => {
-  const [currentCard, setCurrentCard] = useState(numberOfCards);
+  const [currentCard, setCurrentCard] = useState(0);
   const testimonials = [
     {
       userImg: "",
@@ -73,19 +73,19 @@ const Caresoul = ({ numberOfCards = 3 }) => {
   ];
   const containerSize = 1024;
   const perSlide = numberOfCards;
-  const gapSize = 20;
+  const gapSize = 16;
   const numberOfGap = perSlide - 1;
   const totalGapSize = gapSize * numberOfGap;
 
   const slideWidth = containerSize / perSlide - totalGapSize / perSlide;
   const handleLeft = () => {
-    if (currentCard <= numberOfCards) {
+    if (currentCard <= 0) {
       return;
     }
     setCurrentCard((prev) => prev - 1);
   };
   const handleRight = () => {
-    if (currentCard >= testimonials.length) {
+    if (currentCard >= testimonials.length - numberOfCards) {
       return;
     }
     setCurrentCard((prev) => prev + 1);
@@ -96,11 +96,29 @@ const Caresoul = ({ numberOfCards = 3 }) => {
       <div
         className="caresoul__grid_wrapper"
         // style={{ gridAutoColumns: `${slideWidth}px`, gridGap: `${gapSize}px` }}
+        style={{
+          columnGap: `${gapSize}px`,
+        }}
       >
-        {testimonials.map((testimonial, index) =>
-          index < currentCard && index >= currentCard - numberOfCards ? (
-            <TestimonialsCard key={index} testimonial={testimonial} />
-          ) : null
+        {testimonials.map(
+          (testimonial, index) => (
+            // index >= currentCard && index < currentCard + numberOfCards
+            // ?
+            <TestimonialsCard
+              key={index}
+              testimonial={testimonial}
+              clas="caresoul__active"
+              currentCard={currentCard}
+              gapSize={gapSize}
+            />
+          )
+          //  : (
+          //   <TestimonialsCard
+          //     key={index}
+          //     testimonial={testimonial}
+          //     clas="caresoul__inactive"
+          //   />
+          // )
         )}
       </div>
       <div className="caresoul__buttons">

@@ -2,9 +2,11 @@ import React from "react";
 import { useState } from "react";
 import Plus from "../assets/Plus.svg";
 import Minus from "../assets/Minus.svg";
+import { useRef } from "react";
 
 const Accordian = () => {
   const [currentOpen, setCurrentOpen] = useState(null);
+  const content = useRef(null);
   let accordian = [
     {
       head: "What extracurricular activities are available for students?",
@@ -46,8 +48,10 @@ const Accordian = () => {
     }
     setCurrentOpen(i);
   };
+
+  // console.log("cc", content.current.clientHeight);
   return (
-    <div className="accordian">
+    <div ref={content} className="accordian">
       {accordian.map((item, index) => (
         <div
           key={index}
@@ -62,15 +66,19 @@ const Accordian = () => {
             onClick={() => handleClick(index)}
           >
             {item.head}
-            <span className="plusminus border-2 border-radius-4 bg-primary-100 b">
+            <span className="plusminus border-2 border-radius-4 bg-primary-100 ">
               <img src={currentOpen == index ? Minus : Plus} alt="" />
             </span>
           </div>
-          {currentOpen === index && (
-            <div className="accord_body ff-base clr-neutral-600 fw-medium fw">
+          {
+            <div
+              className={`accord__body ff-base clr-neutral-600 fw-medium fw
+              ${currentOpen == index ? "accord__body__show" : ""}
+               `}
+            >
               {item.body}
             </div>
-          )}
+          }
         </div>
       ))}
     </div>

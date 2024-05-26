@@ -52,6 +52,7 @@
   grid-template-rows: subgrid;
   grid-row: span 3;
   row-gap: 24px;
+  transition: translate 0.6s ease-in-out;
 
   .profile_wrapper {
     display: flex;

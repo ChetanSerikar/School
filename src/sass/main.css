@@ -192,6 +192,7 @@ a:is(:hover, :focus) {
   grid-template-rows: subgrid;
   grid-row: span 3;
   row-gap: 24px;
+  transition: translate 0.6s ease-in-out;
 }
 .card-2 .profile_wrapper {
   display: flex;
@@ -863,13 +864,10 @@ a:is(:hover, :focus) {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc(33.3333333333% - 16px);
-  transition: 0.2s all ease-in;
   margin-bottom: var(--fs-40);
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-  transition: all 0.2s ease-in-out;
   scroll-behavior: smooth;
   scrollbar-width: 0;
+  overflow: scroll;
 }
 .caresoul__grid_wrapper::-webkit-scrollbar {
   display: none;
@@ -911,10 +909,24 @@ a:is(:hover, :focus) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s ease-in-out;
 }
 .accordian .accord__head .plusminus {
   padding: 9.3px;
+}
+.accordian .accord__body {
+  max-height: 0;
+  transition: all 0.6s ease-in-out;
+  scale: 0.5;
+  opacity: 0;
+}
+.accordian .accord__body__show {
+  display: block;
+  scale: 1;
+  max-height: 500px;
+  opacity: 1;
+}
+.accordian .accord .accord__body__active {
+  opacity: 1;
 }
 .accordian .accord .underline {
   margin-bottom: 20px;

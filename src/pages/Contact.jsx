@@ -1,4 +1,3 @@
-import React from "react";
 import LayoutTwo from "../components/LayoutTwo";
 import ContactInfo from "../components/ContactInfo";
 import ContactForm from "../components/ContactForm";

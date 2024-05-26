@@ -7,14 +7,10 @@
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 16px);
-
-    transition: 0.2s all ease-in;
     margin-bottom: var(--fs-40);
-    // grid-template-columns: repeat(3, calc((100% / 3) - 16px));
-    column-gap: 1rem;
-    transition: all 0.2s ease-in-out;
     scroll-behavior: smooth;
     scrollbar-width: 0;
+    overflow: scroll;
   }
   &__grid_wrapper::-webkit-scrollbar {
     display: none;
