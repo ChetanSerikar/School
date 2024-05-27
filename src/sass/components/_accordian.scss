@@ -3,10 +3,15 @@
   grid-template-columns: repeat(2, minmax(358px, 1fr));
   gap: 40px;
   .accord {
+    translate: 0 140%;
+    opacity: 0;
+    animation: fade ease-in-out forwards;
+    animation-duration: 0.6s;
+    animation-timeline: view();
+    animation-range: 0% 25%;
     padding: 26px 30px;
     flex-basis: calc(50% - 50px);
     height: fit-content;
-    // background-color: var(--primary-300);
 
     &__head {
       width: 100%;
@@ -25,7 +30,6 @@
       scale: 0.5;
       opacity: 0;
       &__show {
-        display: block;
         scale: 1;
         max-height: 500px;
         opacity: 1;
@@ -47,5 +51,13 @@
 @media (max-width: 900px) {
   .accordian {
     grid-template-columns: repeat(1, minmax(358px, 1fr));
+  }
+}
+@keyframes fade {
+  from {
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
   }
 }

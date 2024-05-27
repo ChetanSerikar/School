@@ -3,7 +3,7 @@
 
   margin: 0 auto;
   &__grid_wrapper {
-    overflow: scroll;
+    overflow-inline: scroll;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 16px);

@@ -21,7 +21,7 @@ const Navbar = () => {
       link: "/about",
     },
     {
-      title: "academics",
+      title: "Academics",
       link: "/academics",
     },
     {

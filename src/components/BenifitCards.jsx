@@ -13,6 +13,7 @@ const BenifitCards = () => {
             title={card.title}
             descrption={card.descrption}
             img={card.img}
+            id={index}
           />
         ))}
       </div>

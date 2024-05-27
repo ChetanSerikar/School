@@ -1,9 +1,9 @@
 import React from "react";
 import IMG from "../assets/benfits2.svg";
 
-const CardOne = ({ title, descrption, img }) => {
+const CardOne = ({ title, descrption, img, id }) => {
   return (
-    <div className="card-1 ff-base border-2 border-radius-10 box-shadow-2">
+    <div className="card-1 ff-base border-2 border-radius-10 box-shadow-2 fade__in">
       <div className="card-1__img border-radius-8 border-2 ">
         <img src={img} alt="" />
       </div>
