@@ -83,14 +83,16 @@ const Caresoul = ({ numberOfCards = 3 }) => {
       return;
     }
     setCurrentCard((prev) => prev - 1);
+    // ref.current.scrollLeft = ref.current.scrollLeft - slideWidth;
   };
   const handleRight = () => {
     if (currentCard >= testimonials.length - numberOfCards) {
       return;
     }
     setCurrentCard((prev) => prev + 1);
+    // ref.current.scrollLeft = ref.current.scrollLeft - slideWidth;
   };
-  const con = true;
+
   return (
     <div className="caresoul margin-bottom-150">
       <div

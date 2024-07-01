@@ -7,11 +7,17 @@ import Admissions from "./pages/Admissions";
 import StudentLife from "./pages/StudentLife";
 import Contact from "./pages/Contact";
 import "./sass/main.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LayoutComponent />,
+    element: (
+      <>
+        <ScrollToTop />
+        <LayoutComponent />
+      </>
+    ),
     children: [
       {
         index: true,

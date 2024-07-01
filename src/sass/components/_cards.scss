@@ -21,11 +21,17 @@
   grid-template-columns: repeat(auto-fit, minmax(358px, 1fr));
   grid-row-gap: 68px;
   grid-column-gap: 20px;
+  // overflow: hidden;
+  // z-index: 2;
 }
 .card-1 {
   scale: 0.8;
+  // translate: -100%;
+
   opacity: 0;
-  // translate: 100%;
+
+  // z-index: 1;
+
   position: relative;
   padding: 60px 40px 40px 40px;
   display: grid;
@@ -61,7 +67,7 @@
   to {
     scale: 1;
     opacity: 1;
-    // translate: 0;
+    translate: 0;
   }
 }
 
